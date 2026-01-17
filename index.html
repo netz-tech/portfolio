@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Netz</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+<style>
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+<body>
+<header>
+<nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contributions.html" class="nav-link">Contributions</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+</nav>
+</header>
+
+<main class="centered page-transition">
+<section class="hero">
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ242M254NXRvOGxlZTdndG1lbG42dWZjdW94YmltdzBxZmEzZ29ubiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8rXRy8mvBmnLcnXFIO/giphy.gif" alt="Profile" class="profile-pic">
+    <h2>Hello, I'm Netz</h2>
+    <p>Web Developer | Designer | Creator</p>
+    <a href="contributions.html" class="ios-btn colorful-btn">View My Work</a>
+</section>
+</main>
+
+<button id="theme-toggle" class="ios-toggle bottom-right"></button>
+</body>
+</html>

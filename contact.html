@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Netz</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script defer src="script.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contributions.html" class="nav-link">Contributions</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+</header>
+
+<main class="centered page-transition">
+    <div class="contact-info-card">
+        <h1>Contact Me</h1>
+        <p>If you’d like to get in touch, you can send me a message using the button below or reach me through these channels:</p>
+        <div class="contact-details">
+            <p><strong>Discord:</strong> netz_tech</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/netz-tech" target="_blank">github.com/netz-tech</a></p>
+        </div>
+        <button id="open-modal" class="ios-btn colorful-btn">Send a Message</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Send a Message</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="title" placeholder="Title" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="ios-btn colorful-btn">Send</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<button id="theme-toggle" class="ios-toggle bottom-right"></button>
+</body>
+</html>
